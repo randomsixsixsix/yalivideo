@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:stv="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refresh_myhistory"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_myhistory"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_myhistory_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <com.allen.library.SuperButton
+            android:id="@+id/sb_myhistory_bottom1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="@string/chose_all"
+            android:textColor="@color/col_text1"
+            android:textSize="15dp"
+            stv:sCornersRadius="1dp"
+            stv:sGravity="center"
+            stv:sSelectorNormalColor="@color/white"
+            stv:sSelectorPressedColor="@color/col_text4"
+            stv:sStrokeColor="@color/col_primary_line"
+            stv:sStrokeWidth="1dp"
+            stv:sUseSelector="true" />
+
+
+        <com.allen.library.SuperButton
+            android:id="@+id/sb_myhistory_bottom2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="@string/text_delete"
+            android:textColor="@color/col_text1"
+            android:textSize="15dp"
+            stv:sCornersRadius="1dp"
+            stv:sGravity="center"
+            stv:sSelectorNormalColor="@color/white"
+            stv:sSelectorPressedColor="@color/col_text4"
+            stv:sStrokeColor="@color/col_primary_line"
+            stv:sStrokeWidth="1dp"
+            stv:sUseSelector="true" />
+
+    </LinearLayout>
+
+</LinearLayout>

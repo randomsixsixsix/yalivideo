@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:stv="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_nation_iten_letter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_nation_iten_letter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:paddingTop="20dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="10dp"
+            android:text="A"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/col_primary_line" />
+
+    </LinearLayout>
+
+    <com.allen.library.SuperButton
+        android:id="@+id/tv_nation_iten_name"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="中国"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        stv:sGravity="left"
+        android:paddingLeft="15dp"
+        stv:sCornersRadius="1dp"
+        stv:sSelectorNormalColor="@color/transparent"
+        stv:sSelectorPressedColor="@color/col_text1"
+        stv:sUseSelector="true" />
+
+
+</LinearLayout>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@drawable/app_bar_top">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:text="@string/zhuanlantuijian"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_18dp"></TextView>
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="2019必看专题"
+                android:textColor="@color/app_theme"
+                android:textSize="@dimen/text_16dp"></TextView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycle_zhuanji"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:paddingBottom="10dp"></androidx.recyclerview.widget.RecyclerView>
+
+            <com.stx.xhb.xbanner.XBanner
+                app:placeholderDrawable="@drawable/default_cover_xhsp"
+                android:id="@+id/xbanner_zhuanlan"
+                android:layout_width="match_parent"
+                android:layout_height="161dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                app:AutoPlayTime="3000"
+                app:isAutoPlay="true"
+                app:pointsVisibility="false"></com.stx.xhb.xbanner.XBanner>
+
+            <LinearLayout
+                android:id="@+id/ll_points"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:orientation="horizontal"></LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/hotcolumn"
+                    android:textColor="@color/app_theme"
+                    android:textSize="@dimen/text_16dp"></TextView>
+
+                <TextView
+                    android:id="@+id/tv_more_hotstar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:drawableRight="@drawable/more"
+                    android:drawablePadding="4dp"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="@string/more"
+                    android:textColor="@color/col_text3"
+                    android:textSize="@dimen/text_14dp"></TextView>
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycle_hot_star"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"></androidx.recyclerview.widget.RecyclerView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/renqistar"
+                    android:textColor="@color/app_theme"
+                    android:textSize="@dimen/text_16dp"></TextView>
+
+                <TextView
+                    android:id="@+id/tv_more_renqistar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:drawableRight="@drawable/more"
+                    android:drawablePadding="4dp"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="@string/more"
+                    android:textColor="@color/col_text3"
+                    android:textSize="@dimen/text_14dp"></TextView>
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycle_renqi_star"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></androidx.recyclerview.widget.RecyclerView>
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

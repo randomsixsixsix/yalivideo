@@ -1,0 +1,287 @@
+<resources>
+    <string name="app_name">小黄视频</string>
+    <string name="neterror">您的网络出错了</string>
+    <string name="request_error">请求异常</string>
+
+
+    <!--我的-->
+    <string name="my_unlogin_title">看官大人请登录</string>
+    <string name="my_vip0">LV0.小白</string>
+    <string name="my_vip1">LV1.入门</string>
+    <string name="my_top_title1">今日剩余观影数</string>
+    <string name="my_top_title2">今日剩余下载数</string>
+    <string name="my_top_title3">推广好友数</string>
+    <string name="my_promote_upgrading">推广升级</string>
+    <string name="my_rank_diss">离升级(增加观影次数)只差%d人</string>
+
+
+    <!--专栏-->
+    <string name="zhuanlantuijian">专栏推荐</string>
+    <string name="hotstar">热门明星</string>
+    <string name="more">更多</string>
+    <string name="renqistar">人气明星</string>
+    <string name="teji">中秋特辑</string>
+    <string name="date">02-08  22:31:20</string>
+    <string name="selectvideo">立即选片</string>
+    <string name="starname">明星</string>
+    <string name="starinfo">明星个人信息简介明星个人信息简介,明星个人信息简介明星个人信息简介.明星个人信息简介明星个人信息简介明星个人信息简介</string>
+    <string name="filmname">电影名称</string>
+    <string name="filmcount">0部影片</string>
+    <string name="filmtype">喜剧片</string>
+    <string name="to_expand_hint">展开</string>
+    <string name="to_shrink_hint">收起</string>
+    <string name="renqimost">人气最高</string>
+    <string name="videomost">片量最多</string>
+
+    <string-array name="cup">
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>E</item>
+        <item>F</item>
+        <item>G</item>
+        <item>H</item>
+        <item>I</item>
+        <item>J</item>
+        <item>K</item>
+        <item>L</item>
+        <item>M</item>
+    </string-array>
+    <!--排行-->
+    <string-array name="ranktitle">
+        <item>观影榜</item>
+        <item>热搜榜</item>
+        <item>新片榜</item>
+        <item>撸sir榜</item>
+        <item>影星榜</item>
+    </string-array>
+    <!--主页面-导航-->
+    <string-array name="main_sorts">
+        <item>首页</item>
+        <item>专栏</item>
+        <item>排行</item>
+        <item>我的</item>
+    </string-array>
+
+    <!--我的-分类-->
+    <string-array name="my_sorts">
+        <item>我的喜欢</item>
+        <item>观看历史</item>
+        <item>离线下载</item>
+        <item>交流群</item>
+        <item>通知</item>
+        <item>意见反馈</item>
+        <item>启动码兑换</item>
+        <item>设置</item>
+        <item>开通VIP</item>
+    </string-array>
+
+    <!--评论-->
+    <string name="comment_title_none">还没有评论</string>
+    <string name="comment_content_none">暂无评论，来抢沙发吧</string>
+    <string name="comment_input_hint">我也说两句...</string>
+    <string name="comment_send">发送</string>
+    <string name="comment_more_none">没有更多评论了</string>
+    <string name="comment_title_number">共%d条评论</string>
+    <string name="videoduration">01:49:30</string>
+    <string name="comment_total_number">%d评论</string>
+    <string name="comment_input_hint2">聊两句</string>
+
+    <!--播放页-->
+    <string name="video_play_number">剩余播放次数%d次</string>
+    <string name="video_play_desc">播放次数不够？点击立即推广获取次数</string>
+    <string name="text_title">标题</string>
+    <string name="introduction">简介</string>
+    <string name="feedback">意见反馈</string>
+    <string name="guess_like">猜你喜欢</string>
+    <string name="video_play_number2">次播放</string>
+    <string name="video_play_number3">播放：%d次播放</string>
+    <string name="video_play_number4">%d次播放</string>
+    <string name="video_play_number5">播放量：%d</string>
+    <string name="video_play_label">标签：%s</string>
+    <string name="video_content_delete">该视频可能已被删除</string>
+    <string name="video_zan_has_tip">已经点赞过了</string>
+    <string name="comment_all">全部评论</string>
+    <string name="comment_hot">热门</string>
+    <string name="comment_new">最新</string>
+    <string name="comment_replay_number">%d条回复</string>
+    <string name="comment_details">评论详情</string>
+    <string name="comment_replay">回复</string>
+    <string name="video_ad">视频广告</string>
+    <string name="video_play_nonumber">您已经没有播放次数了</string>
+
+    <!--登录-->
+    <string name="login_mobile">手机号登陆</string>
+    <string name="login_name">用户名登陆</string>
+    <string name="text_nation">国家/地区</string>
+    <string name="text_china">中国</string>
+    <string name="text_86">+86</string>
+    <string name="text_login">登录</string>
+    <string name="text_register">注册</string>
+    <string name="text_ok">确定</string>
+    <string name="text_next">下一步</string>
+    <string name="text_complete">完成</string>
+    <string name="mobile_input">请输入手机号</string>
+    <string name="mobile_pswd">请输入6-20位密码</string>
+    <string name="mobile_pswd_new">请输入新密码</string>
+    <string name="login_agree">登录即表示您同意我们的《用户协议》\n并已阅读我们的《隐私协议》</string>
+    <string name="pswd_forget">忘记密码</string>
+    <string name="register_account">注册新账号</string>
+    <string name="area_select_json_name">area_phone_code.json</string>
+    <string name="select_nation">选择国家或地区代码</string>
+    <string name="text_search">搜索</string>
+    <string name="register_mobile">手机号注册</string>
+    <string name="invite_code_desc">填写邀请码可以增添每日观影特权(可选)</string>
+    <string name="register_agree">点击下一步即同意《用户注册协议》</string>
+    <string name="find_pswd">找回密码</string>
+    <string name="send_code">获取验证码</string>
+    <string name="login_code_anew_time">重新发送（%1$d）</string>
+    <string name="login_code_again_get">重新获取</string>
+    <string name="login_code_first">请先获取验证码</string>
+    <string name="text_save">保存</string>
+    <string name="text_cancel">取消</string>
+    <string name="login_phone_desc">已发送4位验证码至%s</string>
+    <string name="user_agree">用户协议</string>
+    <string name="ad_details">广告详情</string>
+    <string name="register_success">注册成功</string>
+    <string name="pswd_reset_success">重置密码成功</string>
+
+
+    <!--我的-设置-->
+    <string name="text_setting">设置</string>
+    <string-array name="my_setting">
+        <item>个人信息</item>
+        <item>手机号</item>
+        <item>修改密码</item>
+        <item>清理缓存</item>
+        <item>语言</item>
+        <item>当前版本</item>
+        <item>使用者协议</item>
+    </string-array>
+    <string name="personal_info">个人信息</string>
+    <string name="setting_phone">手机号</string>
+    <string name="setting_pswdmodify">修改密码</string>
+    <string name="setting_cache">清理缓存</string>
+    <string name="setting_language">语言</string>
+    <string name="setting_version">当前版本</string>
+    <string name="setting_agree">使用者协议</string>
+    <string name="language_china">简体中文</string>
+    <string name="text_logout">退出登陆</string>
+    <string name="personal_modify_headerimage">修改头像</string>
+    <string name="personal_nick">昵称</string>
+    <string name="personal_sex">性别</string>
+    <string name="personal_age">年龄</string>
+    <string name="personal_work">职业</string>
+    <string name="personal_mate">伴侣状态</string>
+    <string name="personal_like">观影偏好</string>
+    <string name="please_set">请设置</string>
+    <string name="please_modify">请设置修改内容</string>
+    <string name="text_man">男</string>
+    <string name="text_woman">女</string>
+    <string name="mate_unmarry">未婚</string>
+    <string name="mate_married">已婚</string>
+    <string name="mate_divorced">离异</string>
+    <string name="phone_desc">手机号：%s</string>
+    <string name="click_get">点击获取</string>
+    <string name="verify_sms">验证码</string>
+    <string name="pswd_modify">密码修改</string>
+    <string name="set_nick_title">起一个好听的名字吧</string>
+    <string name="please_input_nick">请输入一个新的昵称</string>
+    <string name="nick_input_desc">1-7个字，支持中文、英文、数字和下划线</string>
+    <string name="select_head_image">选择头像</string>
+    <string name="clear_success">清除缓存成功</string>
+    <string name="Language_zh_rch">简体中文</string>
+    <string name="Language_zh_rtw">繁体中文</string>
+    <string name="Language_en_rus">英文</string>
+
+
+    <!--我的-->
+    <string name="my_like">我的喜欢</string>
+    <string name="my_history">历史记录</string>
+    <string name="text_edit">编辑</string>
+    <string name="my_history_today">今日</string>
+    <string name="my_history_week">七日</string>
+    <string name="my_history_moreearly">更早</string>
+    <string name="my_notify">通知</string>
+    <string name="my_notify_bulletin">公告</string>
+    <string name="my_notify_message">消息</string>
+    <string name="my_opinion">意见反馈</string>
+    <string name="my_opinion_question">常见问题</string>
+    <string name="my_opinion_once">立即反馈</string>
+    <string name="my_opinion_return">我的反馈</string>
+    <string name="my_opinion_return_type">反馈类型</string>
+    <string name="my_opinion_return_desc">反馈内容</string>
+    <string name="my_opinion_once_desc1">详细描述</string>
+    <string name="promote_record">推广记录</string>
+    <string name="my_opinion_once_desc1_tip">请详尽描述遇到的问题，以便我们及时为你解决（10-100字）</string>
+    <string name="my_opinion_once_desc2">我遇见的问题</string>
+    <string name="my_opinion_once_post">提交</string>
+    <string name="rule_description">规则说明</string>
+    <string name="my_startcode_input_three">请输入右侧3位数</string>
+    <string name="my_startcode_input_tensecond">请输入12位启动码</string>
+    <string name="chose_all">全选</string>
+    <string name="chose_noall">全不选</string>
+    <string name="text_delete">删除</string>
+    <string name="delete_no_tip">请选择删除的内容</string>
+    <string name="bulletin_details">公告详情</string>
+    <string name="my_pomote_diss">距离下一等级还差%d人</string>
+    <string name="my_pomote_code">我的推广码</string>
+    <string name="my_pomote_code_title">推广分享获取永久免费观影</string>
+    <string name="text_konw">我知道了</string>
+    <string name="me_ad">我的广告</string>
+    <string name="promote_save">保存二维码</string>
+    <string name="promote_cope">复制推广链接</string>
+    <string name="promote_down_app">扫码下载小黄视频APP</string>
+    <string name="promote_your_code">您的推广码</string>
+    <string name="promote_save_tip">看片前请保存官网，被封后可在官网下载最新的APP</string>
+    <string name="promote_open_tip">如果使用qq浏览器不能打开请更换其他浏览器，例如：谷歌、搜狗等</string>
+
+
+    <!--提示语-->
+    <string name="phone_empty_tip">手机号不能为空</string>
+    <string name="pswd_empty_tip">密码为空或格式错误</string>
+    <string name="smscode_empty_tip">请输入验证码</string>
+    <string name="age_nomodify_tip">已经设置过年龄了</string>
+    <string name="pswd_modify_success_tip">密码修改成功</string>
+    <string name="opinion_input_empty_tip">请输入内容</string>
+    <string name="my_pomote_code_save_tip">推广码已经保存到相册</string>
+    <string name="opinion_select_empty_tip">请选择问题类型</string>
+    <string name="opinion_put_success_tip">已经提交成功</string>
+    <string name="opinion_put_image_tip">请选择上传图片</string>
+    <string name="text_tip">温馨提示</string>
+    <string name="cope_success_tip">复制成功</string>
+    <string name="cope_save_success_tip">保存成功</string>
+    <string name="app_share_tip">1、小黄视频，永久免费在线观看！ 2、超快加载，海量正版高清片源，无需翻墙，支持后台缓存下载！ 3、使用推广码 %s 还可以获取专属观影特权，下载请戳我 https://www.xh01.app?promotionCode=%s，部分浏览器打不开，请更换浏览器 </string>
+    <string name="app_share_video_detail_tip">1、深夜看片神器小黄视频App，永久免费在线观看，支持苹果/安卓和h5三端！ 2、超快加载，海量正版高清片源，无需翻墙，支持后台缓存下载！ 3、使用推广码还可以获取专属观影特权，下载请戳我https://www.xh01.app?promotionCode=%s ，部分浏览器打不开，请更换浏览器！ 劲爆视频：姐夫门事件：新娘出轨新郎姐夫，新郎婚礼现场播放出轨完整版！！、全网最全KTV事件流出片大集合 被干到屁眼外翻太可怜了 </string>
+
+    <string name="mostplay">最多播放</string>
+    <string name="starvideo">相关视频</string>
+    <string name="refreshcurrent">最近更新</string>
+    <string name="hotcolumn">热门专题</string>
+    <string name="rankday">日榜</string>
+    <string name="rankweek">周榜</string>
+    <string name="rankmonth">月榜</string>
+    <string name="sousuo">搜索</string>
+
+    <!--推广-->
+    <string name="text_promote">推广</string>
+    <string name="promote_task1_title">推广任务</string>
+    <string name="promote_task1_desc">推广好友成功下载app并注册(注册时好友需填写你的邀请码)后,可永久增加每日观影次数及下载次数。每日下载次数同推广人数</string>
+    <string name="promote_task2_title">推广福利</string>
+    <string name="promote_task3_title">每日任务</string>
+    <string name="my_wantto_promote">我要推广</string>
+    <string name="searchhistory">历史搜索</string>
+    <string name="download">我的下载</string>
+    <string name="downloadOK">下载完成</string>
+    <string name="version">已是最新版本!</string>
+    <string name="promote_go">立即前往</string>
+    <string name="indownload">已在下载队列中</string>
+    <string name="downloaderror">下载地址错误</string>
+    <string name="filenotexists">文件不存在,请重新下载</string>
+    <string name="nodata">暂无数据</string>
+    <string name="downloadFinish">已下载</string>
+    <string name="invite_code">邀请码：%s</string>
+
+
+</resources>

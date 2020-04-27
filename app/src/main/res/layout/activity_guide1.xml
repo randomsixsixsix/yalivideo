@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+  >
+
+    <cn.bingoogolapple.bgabanner.BGABanner
+        android:id="@+id/guide1_banner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:banner_pageChangeDuration="500"
+        app:banner_pointAutoPlayAble="false"
+        app:banner_pointAutoPlayInterval="2000"
+        app:banner_pointContainerBackground="@android:color/transparent"
+        app:banner_pointDrawable="@color/transparent"
+        app:banner_pointTopBottomMargin="15dp"
+        app:banner_transitionEffect="alpha" />
+
+    <TextView
+        android:id="@+id/btn_guide1_enter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/icon_zhuanji"
+        android:paddingBottom="9dp"
+        android:paddingLeft="21dp"
+        android:paddingRight="21dp"
+        android:paddingTop="9dp"
+        android:text="立即体验"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+</RelativeLayout>

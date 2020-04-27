@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <EditText
+        android:id="@+id/et_comminput_input"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_weight="1"
+        android:imeOptions="flagNoExtractUi"
+        android:background="@drawable/gray_cir2"
+        android:hint="@string/comment_input_hint"
+        android:maxLength="200"
+        android:maxLines="3"
+        android:padding="12dp"
+        android:textColor="@color/col_text1"
+        android:textSize="14dp" />
+
+    <Button
+        android:id="@+id/bt_comminput_ok"
+        android:layout_width="50dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/send_ramp"
+        android:enabled="false"
+        android:text="@string/comment_send"
+        android:textColor="@color/col_primary_line"
+        android:textSize="14dp" />
+
+
+
+
+</LinearLayout>

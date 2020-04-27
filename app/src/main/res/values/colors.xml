@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <!--项目主题色-->
+    <color name="app_theme">#f8dc09</color>
+    <!--tag标签颜色-->
+    <color name="tag_bg">#fffadb</color>
+
+    <!--基础色调-->
+    <color name="white">#FFFFFF</color>
+    <color name="gray">#C8C8C8</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="white_transparent">#00FFFFFF</color>
+    <color name="black_tran_50">#7f000000</color>
+
+    <!--背景色-灰色-->
+    <color name="col_primary_bg">#FAF9F9</color>
+    <!--分割线-->
+    <color name="col_primary_line">#EDEFF2</color>
+
+    <!--常用字体色-->
+    <color name="col_text1">#303133</color>
+    <color name="col_text2">#606266</color>
+    <color name="col_text3">#909399</color>
+    <color name="col_text4">#BFC2CC</color>
+    <color name="col_text_purple">#8e8464</color>
+    <color name="col_text_diss">#9b7b00</color>
+    <color name="col_text_dissnumber">#ff850a</color>
+
+
+    <!--我的页面-->
+    <color name="my_nine_bg">#413c3c</color>
+    <color name="login_start_green">#21354c</color>
+    <color name="login_end_green">#599891</color>
+    <color name="yellow_deep">#FF9C00</color>
+    <color name="black_bg">#ee1B1E23</color>
+    <color name="promote_start_bg">#241B41</color>
+    <color name="promote_end_bg">#BD5362</color>
+    <color name="bar_bottom_bg">#242b2e</color>
+
+    <color name="gray_f4">#F4F4F4</color>
+    <color name="gray_5">#555555</color>
+    <color name="gray_6">#666666</color>
+    <color name="gray_8">#888888</color>
+    <color name="gray_65">#656565</color>
+    <color name="gray_3">#333333</color>
+    <color name="gray_a">#aaaaaa</color>
+    <color name="gray_7">#777777</color>
+    <color name="gray_9">#999999</color>
+    <color name="gray_ec">#ECECEC</color>
+    <color name="gray_e">#EEEEEE</color>
+    <color name="gray_f8">#F8F8F8</color>
+
+    <color name="grey">#ebebeb</color>
+    <color name="orange">#ff8000</color>
+
+</resources>

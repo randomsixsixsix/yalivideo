@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+    <com.stx.xhb.xbanner.XBanner
+        android:id="@+id/page_xbanner"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/transparent"
+        android:visibility="visible"
+        app:AutoPlayTime="3000"
+        app:isAutoPlay="true"
+        app:isClipChildrenMode="true"
+        app:isClipChildrenModeLessThree="true"
+        app:isShowIndicatorOnlyOne="false"
+        app:isShowNumberIndicator="false"
+        app:isShowTips="false"
+        app:pageChangeDuration="1000"
+        app:pointsVisibility="false" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_points"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:orientation="horizontal"></LinearLayout>
+
+</LinearLayout>

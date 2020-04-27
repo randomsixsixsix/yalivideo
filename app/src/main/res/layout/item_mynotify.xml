@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_mynotify_item_pic"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginRight="10dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/notify_logo"/>
+
+    <TextView
+        android:id="@+id/tv_mynotify_item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/iv_mynotify_item_pic"
+        android:text="标题"
+        android:layout_marginTop="5dp"
+        android:lines="1"
+        android:textSize="15dp"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/tv_mynotify_item_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_mynotify_item_title"
+        android:layout_toRightOf="@+id/iv_mynotify_item_pic"
+        android:text="描述"
+        android:lines="1"
+        android:layout_marginTop="5dp"
+        android:textSize="13dp"
+        android:textColor="@color/col_text4"/>
+
+</RelativeLayout>

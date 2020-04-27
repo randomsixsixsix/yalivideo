@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:stv="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <com.allen.library.SuperButton
+        android:id="@+id/tv_poprank_item_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="哈哈"
+        android:textColor="@color/col_text1"
+        android:textSize="15dp"
+        stv:sCornersRadius="1dp"
+        stv:sGravity="center"
+        stv:sSelectorNormalColor="@color/white"
+        stv:sSelectorPressedColor="@color/col_primary_line"
+        stv:sStrokeWidth="0.5dp"
+        stv:sSolidColor="@color/col_primary_bg"
+        stv:sUseSelector="true" />
+
+
+
+
+
+</LinearLayout>

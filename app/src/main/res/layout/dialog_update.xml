@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="255dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/shape_white_10corner"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <com.video.yali.widget.RoundCornerImageView2
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_update_bg"></com.video.yali.widget.RoundCornerImageView2>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:text="升级到新版本"
+            android:textColor="@color/gray_3"
+            android:textSize="15dp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tv_version_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:gravity="center"
+            android:text="v1.0.2"
+            android:textColor="#5F99FA"
+            android:textSize="13dp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tv_versioncontent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:gravity="left|center"
+            android:minHeight="60dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textColor="@color/gray_6"
+            android:textSize="13dp"
+            android:visibility="visible"
+            tools:text="发现新版本,是否要更新?发现新版本,是否要更新?发现新版本,是否要更新?发现新版本,是否要更新?发现新版本,是否要更新?发现新版本,是否要更新?" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/gray_f4"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/versionchecklib_version_dialog_commit"
+                android:layout_width="130dp"
+                android:layout_height="33dp"
+                android:background="@drawable/shape_btn_update"
+                android:gravity="center"
+                android:text="立即升级"
+                android:textColor="@color/white"
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/versionchecklib_version_dialog_cancel"
+                android:layout_width="130dp"
+                android:layout_height="33dp"
+                android:gravity="center"
+                android:text="暂不升级"
+                android:textColor="@color/gray_9"
+                android:textSize="13dp"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</FrameLayout>

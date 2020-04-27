@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="250dp"
+    android:layout_height="151dp"
+    android:layout_marginRight="28dp"
+    android:background="@drawable/shape_whitebg_corner12"
+    android:orientation="vertical">
+
+    <com.video.yali.widget.BGAImageView
+        android:id="@+id/item_bga_zhuanji"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@mipmap/girl_default"
+        app:bga_iv_borderColor="@color/app_theme"
+        app:bga_iv_borderWidth="2dp"
+        app:bga_iv_circle="true"></com.video.yali.widget.BGAImageView>
+
+    <TextView
+        android:id="@+id/tv_zhuanji_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/item_bga_zhuanji"
+        android:textColor="@color/col_text2"
+        android:textSize="@dimen/text_16dp"
+        android:singleLine="true"
+        tools:text="@string/teji"></TextView>
+
+    <TextView
+        android:id="@+id/tv_zhuanji_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_zhuanji_name"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@id/item_bga_zhuanji"
+        android:text="@string/date"
+        android:textColor="@color/col_text3"
+        android:textSize="@dimen/text_12dp"></TextView>
+
+    <TextView
+        android:id="@+id/tv_zhuanji_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_bga_zhuanji"
+        android:layout_margin="10dp"
+        android:singleLine="true"
+        android:text="@string/teji"
+        android:textColor="@color/col_text2"
+        android:textSize="@dimen/text_16dp"></TextView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/tv_zhuanji_info"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/col_primary_line"></View>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="12dp"
+        android:background="@drawable/icon_zhuanji"
+        android:gravity="center"
+        android:padding="3dp"
+        android:text="@string/selectvideo"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_14dp"></TextView>
+</RelativeLayout>

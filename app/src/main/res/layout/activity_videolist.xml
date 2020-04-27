@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.scwang.smartrefresh.layout.SmartRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/refresh_videolist"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_bg"
+    android:orientation="vertical">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:descendantFocusability="blocksDescendants">
+
+            <com.video.yali.widget.BottomRoundImageView
+                android:id="@+id/img_videolist_top"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:src="@color/black_bg"></com.video.yali.widget.BottomRoundImageView>
+
+            <ImageView
+                android:id="@+id/img_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:padding="12dp"
+                android:src="@drawable/ic_arrow_back"></ImageView>
+
+            <TextView
+                android:id="@+id/tv_video_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_videolist_top"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="-30dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/filmtype"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_16dp"></TextView>
+
+            <com.video.yali.widget.ExpandableTextView
+                android:id="@+id/tv_video_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_video_type"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/filmtype"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_16dp"
+                app:etv_MaxLinesOnShrink="4"
+                app:etv_ToExpandHintColor="@color/app_theme"
+                app:etv_ToShrinkHintColor="@color/app_theme"></com.video.yali.widget.ExpandableTextView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycle_videolist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_video_desc"
+                android:layout_marginLeft="10dp"></androidx.recyclerview.widget.RecyclerView>
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</com.scwang.smartrefresh.layout.SmartRefreshLayout>

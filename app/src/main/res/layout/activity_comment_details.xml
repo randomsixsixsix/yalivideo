@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:stv="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_bg"
+    android:orientation="vertical"
+    tools:context=".ui.activity.home.CommentDetailsActivity">
+
+    <include layout="@layout/include_title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/iv_commentdetails_head"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/default_header_comment" />
+
+        <TextView
+            android:id="@+id/tv_commentdetails_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_toRightOf="@+id/iv_commentdetails_head"
+            android:text="姓名"
+            android:textColor="@color/white"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/tv_commentdetails_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_commentdetails_name"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/iv_commentdetails_head"
+            android:text="0天前"
+            android:textColor="@color/white"
+            android:textSize="11dp" />
+
+
+        <TextView
+            android:id="@+id/tv_commentdetails_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_commentdetails_head"
+            android:layout_marginTop="10dp"
+            android:text="这个电影真不错"
+            android:textColor="@color/white"
+            android:textSize="14dp" />
+
+
+        <com.allen.library.SuperButton
+            android:id="@+id/tv_commentdetails_replay"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@+id/tv_commentdetails_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="@string/comment_replay"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            stv:sCornersRadius="1dp"
+            stv:sGravity="left"
+            stv:sSelectorNormalColor="@color/black_bg"
+            stv:sSelectorPressedColor="@color/col_text1"
+            stv:sUseSelector="true" />
+
+        <TextView
+            android:id="@+id/tv_commentdetails_zannumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:drawableRight="@mipmap/icon_comment_praise"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textSize="13dp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/col_text1" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_commentdetails"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp" />
+
+</LinearLayout>

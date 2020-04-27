@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp">
+
+
+    <com.video.yali.widget.RoundCornerImageView
+        android:id="@+id/img_video"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"></com.video.yali.widget.RoundCornerImageView>
+
+
+    <TextView
+        android:id="@+id/tv_video_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/img_video"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_14dp"></TextView>
+
+    <TextView
+        android:id="@+id/tv_video_playcount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="15dp"
+        android:layout_toRightOf="@id/img_video"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_14dp"></TextView>
+</RelativeLayout>

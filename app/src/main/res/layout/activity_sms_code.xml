@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ver="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/black_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/include_title" />
+
+        <TextView
+            android:id="@+id/tv_smscode_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="12dp"
+            android:text="@string/login_mobile"
+            android:textColor="@color/white"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_smscode_phonedesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/send_code"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.dalimao.corelibrary.VerificationCodeInput
+                android:id="@+id/vci_smscode_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="gone"
+                ver:box="4"
+                ver:box_bg_focus="@drawable/verification_edit_bg_focus"
+                ver:box_bg_normal="@drawable/verification_edit_bg_normal"
+                ver:child_h_padding="10dp"
+                ver:inputType="number" />
+
+            <com.video.yali.widget.VerificationCodeView
+                android:id="@+id/verificationCodeView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                ver:vCodeBackgroundFocus="@drawable/verification_code_et_bg_focus"
+                ver:vCodeBackgroundNormal="@drawable/verification_code_et_bg_normal"
+                ver:vCodeDataLength="4"
+                ver:vCodeHeight="50dp"
+                ver:vCodeMargin="30dp"
+                ver:vCodeTextColor="@color/black"
+                ver:vCodeTextSize="20dp"
+                ver:vCodeWidth="50dp" />
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/bt_smscode_ok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginRight="15dp"
+            android:background="@mipmap/yellow_gradual_bg"
+            android:gravity="center"
+            android:text="@string/text_next" />
+
+        <Button
+            android:id="@+id/bt_smscode_sendcode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="15dp"
+            android:background="@null"
+            android:gravity="center"
+            android:text="@string/send_code"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_smscode_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:text="已有账号立即登录"
+        android:textColor="@color/col_text1"
+        android:textSize="20dp"
+        tools:ignore="HardcodedText,SpUsage" />
+</RelativeLayout>

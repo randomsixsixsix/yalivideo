@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_search_label"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="10dp"
+    android:background="@drawable/xuanze_selector"
+    android:orientation="vertical"
+    android:paddingLeft="12dp"
+    android:paddingTop="3dp"
+    android:paddingRight="12dp"
+    android:paddingBottom="3dp"
+    android:text="@string/teji"
+    android:textColor="@color/renqistar_textcolor_selector"
+    android:textSize="@dimen/text_14dp">
+
+</TextView>

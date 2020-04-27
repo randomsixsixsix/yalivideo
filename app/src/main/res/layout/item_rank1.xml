@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_rank1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/black_bg"
+        android:visibility="visible">
+
+        <com.video.yali.widget.RoundCornerImageView
+            android:id="@+id/img_rank_top1"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_margin="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/default_cover_xhsp"></com.video.yali.widget.RoundCornerImageView>
+
+        <TextView
+            android:id="@+id/tv_video_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="播放量:10    下载量:1000  收藏量:1000"
+            android:textColor="@color/white"></TextView>
+
+        <TextView
+            android:id="@+id/tv_video_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/tv_video_info"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="上架时间:2019-19-19"
+            android:textColor="@color/white"
+            android:visibility="invisible"></TextView>
+
+        <TextView
+            android:singleLine="true"
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/tv_video_time"
+            android:layout_marginLeft="20dp"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_16dp"></TextView>
+
+        <TextView
+            android:id="@+id/tv_mingci1"
+            android:layout_width="50dp"
+            android:layout_height="29dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/ranked_no1_label"
+            android:minWidth="40dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="5dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_14dp"></TextView>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_rank2"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@color/black_bg"
+        android:visibility="gone">
+
+        <com.video.yali.widget.RoundCornerImageView
+            android:id="@+id/img_rank2"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/default_cover_xhsp"></com.video.yali.widget.RoundCornerImageView>
+
+        <TextView
+            android:singleLine="true"
+            android:id="@+id/tv_video_name2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@id/img_rank2"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="14dp"></TextView>
+
+        <TextView
+            android:id="@+id/tv_video_info2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="15dp"
+            android:layout_toRightOf="@id/img_rank2"
+            android:text="下载量:100   收藏量:500"
+            android:textColor="@color/white"
+            android:textSize="14dp"></TextView>
+
+        <TextView
+            android:id="@+id/tv_video_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/tv_video_info2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toRightOf="@id/img_rank2"
+            android:text="播放量:1000"
+            android:textColor="@color/white"
+            android:textSize="14dp"></TextView>
+
+        <TextView
+            android:id="@+id/tv_video_time2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/tv_video_info2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toRightOf="@id/img_rank2"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            android:visibility="gone"></TextView>
+
+        <TextView
+            android:id="@+id/tv_mingci2"
+            android:layout_width="50dp"
+            android:layout_height="29dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/shape_top2"
+            android:gravity="center"
+            android:minWidth="20dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="5dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_14dp"></TextView>
+    </RelativeLayout>
+
+</LinearLayout>

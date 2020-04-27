@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black_bg"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/iv_videodetails_item_pic"
+        android:layout_width="138dp"
+        android:layout_height="95dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/default_cover_xhsp" />
+
+    <TextView
+        android:id="@+id/tv_videodetails_item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@+id/iv_videodetails_item_pic"
+        android:maxLines="2"
+        android:text="视频标题"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+    <com.video.yali.widget.flowlayout.TagFlowLayout
+        android:id="@+id/tfl_videodetails_item_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_videodetails_item_title"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/iv_videodetails_item_pic"
+        app:max_select="-1" />
+
+    <TextView
+        android:id="@+id/tv_videodetails_item_playnumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tfl_videodetails_item_label"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/iv_videodetails_item_pic"
+        android:textColor="@color/col_text4"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/tv_videodetails_item_playtype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tfl_videodetails_item_label"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/tv_videodetails_item_playnumber"
+        android:text="自制"
+        android:textColor="@color/col_text1"
+        android:textSize="11dp"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

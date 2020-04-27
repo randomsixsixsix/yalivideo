@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:stv="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_comment_item_head_all"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black_bg">
+
+    <ImageView
+        android:id="@+id/iv_comment_item_head"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="15dp"
+        android:src="@mipmap/default_header_comment" />
+
+    <TextView
+        android:id="@+id/tv_comment_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:layout_toRightOf="@+id/iv_comment_item_head"
+        android:text="姓名"
+        android:textColor="@color/white"
+        android:textSize="13dp" />
+
+    <TextView
+        android:id="@+id/tv_comment_item_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_comment_item_name"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/iv_comment_item_head"
+        android:text="0天前"
+        android:textColor="@color/col_text4"
+        android:textSize="11dp" />
+
+    <TextView
+        android:id="@+id/tv_comment_item_hfnumber"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@+id/tv_comment_item_name"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/tv_comment_item_date"
+        android:text="@string/comment_replay_number"
+        android:textColor="@color/col_text4"
+        android:textSize="11dp" />
+
+
+    <TextView
+        android:id="@+id/tv_comment_item_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_comment_item_head"
+        android:layout_marginTop="10dp"
+        android:text="这个电影真不错"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:textColor="@color/white"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/tv_comment_item_zannumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:drawableRight="@mipmap/icon_comment_praise"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:paddingRight="15dp"
+        android:text="0"
+        android:textColor="@color/col_text4"
+        android:textSize="13dp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/tv_comment_item_content"
+        android:layout_marginTop="10dp"
+        android:src="@color/col_text_purple" />
+
+</RelativeLayout>

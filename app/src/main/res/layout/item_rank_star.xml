@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <com.video.yali.widget.BGAImageView
+        android:id="@+id/img_star_head"
+        app:bga_iv_circle="true"
+        android:layout_width="78dp"
+        android:layout_height="78dp"
+        android:layout_margin="10dp"
+        android:src="@mipmap/girl_default"></com.video.yali.widget.BGAImageView>
+
+    <TextView
+        android:id="@+id/tv_mingci"
+        android:layout_width="50dp"
+        android:layout_height="29dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/ranked_no1_label"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_14dp"></TextView>
+
+    <TextView
+        android:id="@+id/tv_star_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/img_star_head"
+        android:text="@string/starname"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_16dp"></TextView>
+
+    <com.video.yali.widget.RatingBar
+        android:id="@+id/star_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_below="@id/tv_star_name"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/img_star_head"
+        app:selectedNumber="4"
+        app:starDistance="5dp"
+        app:starEmptyRes="@drawable/pingjiai_unselected"
+        app:starIsCantouch="false"
+        app:starSelectedRes="@drawable/pingjia_selected"
+        app:startTotalNumber="5" />
+
+    <TextView
+        android:id="@+id/tv_star_videocount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:drawableRight="@drawable/jinru"
+        android:drawablePadding="10dp"
+        android:gravity="center"
+        android:text="20部影片"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_14dp"></TextView>
+
+
+</RelativeLayout>

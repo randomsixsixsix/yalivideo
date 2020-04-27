@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.scwang.smartrefresh.layout.SmartRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_bg"
+    android:orientation="vertical">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@color/app_theme">
+
+                <ImageView
+                    android:id="@+id/img_star"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"></ImageView>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#60000000"></ImageView>
+
+                <com.video.yali.widget.BGAImageView
+                    android:id="@+id/bga_star"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:src="@mipmap/girl_default"
+                    app:bga_iv_circle="true"></com.video.yali.widget.BGAImageView>
+
+                <TextView
+                    android:id="@+id/tv_video_counts"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/bga_star"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="-50dp"
+                    android:background="@drawable/icon_zhuanji"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_14dp"></TextView>
+
+                <TextView
+                    android:id="@+id/tv_star_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="50dp"
+                    android:layout_toRightOf="@id/bga_star"
+                    android:text="@string/starname"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_14dp"></TextView>
+
+                <TextView
+                    android:id="@+id/tv_star_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/tv_star_info"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_toRightOf="@id/bga_star"
+                    android:text="@string/starname"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_18dp"></TextView>
+
+
+                <ImageView
+                    android:id="@+id/img_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:padding="12dp"
+                    android:src="@drawable/ic_arrow_back"></ImageView>
+            </RelativeLayout>
+
+            <com.video.yali.widget.ExpandableTextView
+                android:id="@+id/tv_star_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:etv_MaxLinesOnShrink="3"
+                android:textColor="@color/white"
+                app:etv_ToExpandHintColor="@color/app_theme"
+                app:etv_ToShrinkHintColor="@color/app_theme" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="@string/starvideo"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_16dp"></TextView>
+
+
+                <TextView
+                    android:id="@+id/tv_play_most"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/xuanze_selector"
+                    android:paddingLeft="14dp"
+                    android:paddingTop="3dp"
+                    android:paddingRight="14dp"
+                    android:paddingBottom="3dp"
+                    android:text="@string/mostplay"
+                    android:textColor="@color/renqistar_textcolor_selector"
+                    android:textSize="@dimen/text_16dp"></TextView>
+
+                <TextView
+                    android:id="@+id/tv_refresh_current"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_toLeftOf="@id/tv_play_most"
+                    android:background="@drawable/xuanze_selector"
+                    android:paddingLeft="14dp"
+                    android:paddingTop="3dp"
+                    android:paddingRight="14dp"
+                    android:paddingBottom="3dp"
+                    android:text="@string/refreshcurrent"
+                    android:textColor="@color/renqistar_textcolor_selector"
+                    android:textSize="@dimen/text_16dp"></TextView>
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycle_start_video"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></androidx.recyclerview.widget.RecyclerView>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</com.scwang.smartrefresh.layout.SmartRefreshLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="250dp"
+    android:layout_height="120dp"
+    android:gravity="center"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="250dp"-->
+    <!--        android:layout_height="88dp"-->
+    <!--        android:background="#30000000"-->
+    <!--        android:gravity="center"-->
+    <!--        android:orientation="vertical">-->
+
+
+    <!--        <TextView-->
+
+    <!--            android:id="@+id/tv_loading"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_gravity="center_horizontal"-->
+    <!--            android:layout_margin="5dp"-->
+    <!--            android:gravity="center_horizontal"-->
+    <!--            android:text="正在切换加速通道.."-->
+    <!--            android:textColor="@color/col_text1"-->
+    <!--            android:textSize="12dp" />-->
+
+    <!--        <com.wang.avi.AVLoadingIndicatorView-->
+    <!--            android:id="@+id/load_view"-->
+    <!--            android:layout_width="36dp"-->
+    <!--            android:layout_height="36dp"-->
+    <!--            android:layout_marginTop="0dp"-->
+    <!--            app:indicatorColor="@color/col_text2"-->
+    <!--            app:indicatorName="LineSpinFadeLoaderIndicator" />-->
+
+    <!--    </LinearLayout>-->
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/start_load_root"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:alpha="0.2"
+            android:background="@drawable/shape_start_progress"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/load_view"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="24dp"
+            app:indicatorColor="@color/gray_a"
+            app:indicatorName="LineSpinFadeLoaderIndicator"
+            app:layout_constraintBottom_toTopOf="@+id/tv_server_tip"
+            app:layout_constraintEnd_toEndOf="@+id/imageView7"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/tv_server_tip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:text="正在选择加速通道，请稍候..."
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

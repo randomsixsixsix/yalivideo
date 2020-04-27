@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_bg"
+    android:orientation="vertical"
+    tools:context=".ui.activity.me.PromoteActivity">
+
+    <include layout="@layout/include_title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <net.lucode.hackware.magicindicator.MagicIndicator
+            android:id="@+id/indicator_promote"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+        <RelativeLayout
+            android:id="@+id/ll_promote_top"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:layout_below="@+id/indicator_promote"
+            android:background="@mipmap/promote_top_bg"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <com.video.yali.widget.ColorArcProgressBar
+                android:id="@+id/bar_promote"
+                app:back_color="@android:color/darker_gray"
+                app:back_width="4dp"
+                app:front_color1="#00ff00"
+                app:front_color2="#ffff00"
+                app:front_color3="#ff0000"
+                app:front_width="5dp"
+                app:is_need_content="true"
+                app:is_need_dial="true"
+                app:is_need_title="true"
+                app:is_need_unit="true"
+                app:max_value="100"
+                app:string_title="当前速度"
+                app:string_unit="km/h"
+                app:total_engle="180"
+                android:layout_width="300dp"
+                android:layout_height="240dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="90dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_promote_head"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@mipmap/default_header_logo" />
+
+                <TextView
+                    android:id="@+id/tv_promote_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text=""
+                    android:textColor="@color/col_text1"
+                    android:textSize="13dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_promote_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/my_pomote_diss"
+                    android:textColor="@color/col_text1"
+                    android:textSize="13dp" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/vp_promote"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/ll_promote_top"
+            android:visibility="visible" />
+
+
+        <Button
+            android:id="@+id/bt_promote_ok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@mipmap/promote_bottom_bg"
+            android:gravity="center"
+            android:text="@string/my_wantto_promote"
+            android:textColor="@color/col_text1"
+            android:textSize="16dp" />
+
+    </RelativeLayout>
+
+</LinearLayout>
